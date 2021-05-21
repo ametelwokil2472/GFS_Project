@@ -1,0 +1,143 @@
+
+/**
+Start rating CSS - START
+*/
+
+.makeMarkRed{
+    background-color: transparent; color: red !important;
+  }
+  
+  .rating { 
+    border: none;
+    margin:0px;
+    margin-bottom: 18px;
+    float: left;
+  }
+  
+  .rating > input { display: none; } 
+  
+  .rating.star > label {
+      color: #78e2fb;
+      margin: 1px 20px 0px 0px;
+      background-color: #ffffff;
+      border-radius: 0;
+      height: 48px;
+      float: right;
+      width: 44px;
+      border: 1px solid #ffffff;
+  }
+  fieldset.rating.star > label:before { 
+      margin-top: 0;
+      padding: 0px;
+      font-size: 47px;
+      font-family: FontAwesome;
+      display: inline-block;
+      content: "\2605";
+      position: relative;
+      top: -9px;
+  }
+  .rating > label:before {
+      margin-top: 2px;
+      padding: 5px 12px;
+      font-size: 1.25em;
+      font-family: FontAwesome;
+      display: inline-block;
+      content: "";
+  }
+  .rating > .half:before { 
+    content: "\f089";
+    position: absolute;
+  }
+  .rating.star > label{
+    background-color: transparent !important;
+  }
+  .rating > label { 
+      color: #fff;
+      margin: 1px 11px 0px 0px;
+      background-color: #78e2fb;
+      border-radius: 2px;
+      height: 16px;
+      float: right;
+      width: 16px;
+      border: 1px solid #c1c0c0;  
+  }
+  
+  /***** CSS Magic to Highlight Stars on Hover *****/
+  
+  .rating:not(:checked) > label:hover, /* hover current star */
+  .rating:not(:checked) > label:hover ~ label { 
+      background-color:red!important;
+    cursor:pointer;
+  } /* hover previous stars in list */
+  
+  .rating > input:checked + label:hover, /* hover current star when changing rating */
+  .rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+  .rating > input:checked ~ label:hover ~ label { 
+      background-color:red!important;
+    cursor:pointer;
+  } 
+  .rating.star:not(:checked) > label:hover, /* hover current star */
+  .rating.star:not(:checked) > label:hover ~ label { 
+    color:red!important;
+    background-color: transparent !important;
+    cursor:pointer;
+  } /* hover previous stars in list */
+  
+  .rating.star > input:checked + label:hover, /* hover current star when changing rating.star */
+  .rating.star > label:hover ~ input:checked ~ label, /* lighten current selection */
+  .rating.star > input:checked ~ label:hover ~ label { 
+    color:red!important;
+    cursor:pointer;
+    background-color: transparent !important;
+  } 
+  .star_rating{
+          width: 500px;
+      margin: 0 auto;
+      border: 1px solid #ff0000;
+      padding: 3px 30px 72px 35px;
+      box-shadow: 0 0 15px red;
+      margin-top: 2%;
+      border-radius: 14px;
+  }
+  .star_rating h2 {
+    font-size: 27px;
+    text-transform: uppercase;
+  }
+  .star_rating p {
+    font-size: 17px;
+    color: #78e2fb;
+    clear: both;
+    margin-bottom: 3px;
+  }
+  .star_rating h4 {
+      font-size: 17px;
+      color: #78e2fb;
+      clear: both;
+      margin-bottom: 3px;
+      border-top: 2px solid red;
+      padding-top: 16px;
+      text-align: center;
+  }
+  .rating.star {
+      margin-left: 16%;
+  }
+  @media screen and (max-width: 500px){
+    .star_rating {
+      width: 100%;
+      padding: 3px 8px 72px 6px;
+    }
+    .rating.star {
+      margin: 0 auto;
+      display: block;
+      text-align: center;
+      float: none;
+    }
+    .rating.star > label {
+      margin: 1px;
+      width: 19%;
+    }
+  }
+  /**
+  Start rating CSS - END
+  */
+  

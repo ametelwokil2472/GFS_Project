@@ -1,0 +1,268 @@
+.headerMyCart{
+    background: #16222A;
+    background: -webkit-linear-gradient(59deg, #3A6073, #16222A);
+    background: linear-gradient(59deg, #3A6073, #16222A);
+    color: white;
+    margin-top:0px;
+} 
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+
+
+.dividerline{
+  border-bottom: 1px solid gainsboro;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+}
+
+.padding5margin0{
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+  margin: 0 !important;
+}
+
+.productDesc{
+  margin: 2px !important;
+  font-size: 1.2em !important;
+  color: darkblue !important;
+  padding:2px !important;
+  border:1px red solid !important;
+}
+
+.cWhite{
+  color:#fff;
+}
+.sRed{
+  color:#d48270;
+}
+
+.sDefault{
+  color:#cacaca;
+}
+
+.viewProductBlock{
+  margin:2px; padding:3px; border:1px solid rgba(0,0,0,.125);
+}
+
+.viewProductAttrBlock{
+    font-size: 15px !important;
+    margin: 2px; font-size: .98em;  background:#fff; padding:4px;  border:0px red solid;
+    float:left;
+}
+
+.viewProductAttrBlock span{
+  padding:8px; 
+  display:block;
+  border:1px #fde7e7 solid;
+  margin: 5px;
+}
+.viewProductAttrBlock span label{
+  font-size: 18px !important;
+  color: #565959!important; 
+}
+
+
+.amountPriceQtySize label{
+  padding: 6px;
+  font-size: 22px !important;
+  color:#8e9292 !important;
+  margin-left: 10px !important;
+}
+
+.priceSize{
+  line-height: 32px!important;
+  font-size: 24px !important;
+  color:#B12704!important;
+}
+
+.qtySize{
+    line-height: 28px!important;
+    font-size: 22px !important;
+    color:#565959!important;
+}
+.cartEmptySize{
+  line-height: 28px!important;
+  font-size: 48px !important;
+  color:#565959!important;
+}
+.nameSize{
+    font-size: 24px!important;
+    line-height: 32px!important;
+}
+
+.viewCartProductBlock{
+  margin:2px; padding:3px; border:1px solid rgba(0,0,0,.125);
+}
+
+.viewCartProductAttrBlock{
+    font-size: 14px !important;
+    margin: 2px; font-size: .98em;  background:#fff; padding:4px;  border:0px red solid;
+    float:left;
+}
+
+/*FOOTER*/
+
+footer {
+    background: #16222A;
+    background: -webkit-linear-gradient(59deg, #3A6073, #16222A);
+    background: linear-gradient(59deg, #3A6073, #16222A);
+    color: white;
+    margin-top:100px;
+  }
+  
+  footer a {
+    color: #fff;
+    font-size: 14px;
+    transition-duration: 0.2s;
+  }
+  
+  footer a:hover {
+    color: #FA944B;
+    text-decoration: none;
+  }
+  
+  .copy {
+    font-size: 12px;
+    padding: 10px;
+    border-top: 1px solid #FFFFFF;
+  }
+  
+  .footer-middle {
+    padding-top: 2em;
+    color: white;
+  }
+  
+  
+  /*SOCİAL İCONS*/
+  
+  /* footer social icons */
+  .fa {
+    padding: 7px;
+    font-size: 22px;
+    width: 38px;
+    height: 38px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+
+  .fanew  {
+    font-size: 18px !important;
+    width: 20px !important;
+    height: 20px !important;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  
+  .fa-pinterest {
+    background: #cb2027;
+    color: white;
+  }
+  
+  .fa-snapchat-ghost {
+    background: #fffc00;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+  
+  .fa-skype {
+    background: #00aff0;
+    color: white;
+  }
+  
+  .fa-android {
+    background: #a4c639;
+    color: white;
+  }
+  
+  .fa-dribbble {
+    background: #ea4c89;
+    color: white;
+  }
+  
+  .fa-vimeo {
+    background: #45bbff;
+    color: white;
+  }
+  
+  .fa-tumblr {
+    background: #2c4762;
+    color: white;
+  }
+  
+  .fa-vine {
+    background: #00b489;
+    color: white;
+  }
+  
+  .fa-foursquare {
+    background: #45bbff;
+    color: white;
+  }
+  
+  .fa-stumbleupon {
+    background: #eb4924;
+    color: white;
+  }
+  
+  .fa-flickr {
+    background: #f40083;
+    color: white;
+  }
+  
+  .fa-yahoo {
+    background: #430297;
+    color: white;
+  }
+  
+  .fa-soundcloud {
+    background: #ff5500;
+    color: white;
+  }
+  
+  .fa-reddit {
+    background: #ff5700;
+    color: white;
+  }
+  
+  .fa-rss {
+    background: #ff6600;
+    color: white;
+  }

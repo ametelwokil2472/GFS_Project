@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Web Cart : Cart Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="./css/mycart.css">
+</head>
+<body>
+
+<div class="jumbotron headerMyCart" style="padding: 0;">
+  <div class="row" style="border:0px green solid"> 
+    <div class="col-md-12">
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+          <img src="images/logo.png" width="90"/>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="col-md-8" style="width:100%;text-align: right; border:0px green solid;float:left !important;">
+            </div>  
+            <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <!-- <li class="nav-item">
+          <span class="nav-link">|</span>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#idAboutshop">About</a>
+        </li>
+        <!-- <li class="nav-item">
+          <span class="nav-link">|</span>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link" selected="selected" href="index.html#idProductCat">Shop</a>
+        </li>
+        <!-- <li class="nav-item">
+          <span class="nav-link">|</span>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#idHelp">Help</a>
+        </li>
+        <!-- <li class="nav-item">
+          <span class="nav-link">|</span>
+        </li> -->
+        <li class="nav-item active">
+            <a class="nav-link" onClick="viewCart();" href="javascript:;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+              </svg> Your Cart(<span class="cWhite" onClick="viewCart();" id="idCartItem">0</span>)</a>
+        </li>
+      </ul> 
+    </div>
+  </nav>
+</div>
+</div>
+</div>
+  
+<div class="container col-lg-9"> 
+
+  <section class="container-fluid" id="idHome"><!-- Tag Line -->
+    <div class="row col-md-12">
+      <div class="col-md-8">
+        <div class="row"><h2>Your cart details</h2></div>
+        <div class="row h2 sRed" id="idCartCount"></div> 
+      </div>
+      <div class="col-md-3">
+        <div class="row"><h2>Cart Summary</h2></div>
+        <div class="row h3 sRed"><span class="amountPriceQtySize">Final:</span>  <span id="idCartPaySummary">0</span></div> 
+        <div><a href="checkout.html" class="btn btn-info">Checkout</a></div>
+      </div>
+    </div>
+    
+  </section>
+
+  <div class="dividerline"></div>
+  
+  
+  <section class="container col-lg-10"><!-- Showing Cart details  -->
+    <div class="row" id="idCartDetails">
+      
+    </div>
+  </section>
+  
+  <div class="dividerline"></div>
+   
+
+</div>
+
+
+<footer class="mainfooter" role="contentinfo">
+  <div class="footer-middle">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-6">
+        <!--Column1-->
+        <div class="footer-pad">
+          <img src="images/logo.png" width="80"/>
+          <div class="dividerline padding5margin0"></div>
+          <p>190029 Ametelwokil, Mohammed Addis Ababa, Ethiopia 
+          </p>
+           
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <!--Column1-->
+        <div class="footer-pad">
+          <h4>Main Menu</h4>
+          <ul class="list-unstyled">
+            <li><a href="#idHome">Home</a></li>
+            <li><a href="#idAboutshop">About Us</a></li>
+            <li><a href="#idHelp">Help</a></li>
+            <li><a href="#IdProductCat">Shop</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <!--Column1-->
+        <div class="footer-pad">
+          <h4>Find Us On</h4>
+            <a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a>
+            <a href="#" target="blank" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+            <a href="#" class="icoGithub" title="Github"><i class="fa fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+	<div class="row">
+		<div class="col-md-12 copy">
+			<p class="text-center">&copy; Copyright 2021 - Company Name.  All rights reserved.</p>
+		</div>
+	</div>
+ 
+  </div>
+  </div>
+</footer>
+<script src="./js/mycaart.js"></script>
+<script src="./js/owl.carousel.js"></script>
+<script>
+$( document ).ready(function() {
+  getCartDetails();
+});
+
+</script>
+</body>
+</html>
